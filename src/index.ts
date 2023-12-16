@@ -27,7 +27,10 @@ type FlattenInner<T extends Object, P = {}> = number extends T
   ? /* array */ { [K in JoinPath<P, number>] ? : V } & (V extends Object
     ? Partial<FlattenInner<V, JoinPath<P, number>>>
     : {})
-  : /* record */ UnionToIntersection<{ [K in keyof T]: T[K] extends Object ? FlattenInner<T[K], JoinPath<P, K>> : never }[keyof T]> ;
+  : /* record */ 
+  UnionToIntersection<{ [K in keyof T]: T[K] extends Object ? FlattenInner<T[K], JoinPath<P, K>> : never }[keyof T]> 
+  & { [K in keyof T] : T[K]}
+  ;
 
 export function flatten<T>(val : T) : Flatten<T> {
   const res : any = flat.flatten(val) as any;
