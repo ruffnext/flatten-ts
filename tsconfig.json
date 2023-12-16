@@ -1,0 +1,27 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "sourceMap": true,
+    "noImplicitAny": false,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "declarationDir": "./dist/types",
+    "declarationMap": true,
+    "moduleResolution": "node",
+    "noImplicitUseStrict": false,
+    "strict": false,
+    "module": "commonjs",
+    "target": "es2017",
+    "declaration": true,
+    "outDir": "./dist"
+  },
+  "include": [
+    "src/**/*.ts",
+    "typings.d.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "*.test.ts",
+    "src/visualization.ts"
+  ]
+}

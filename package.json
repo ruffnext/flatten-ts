@@ -1,0 +1,30 @@
+{
+	"name": "flat-ts",
+	"version": "0.0.1",
+	"description": "flatten a nested object with type hint",
+	"main": "dist/index.js",
+	"types": "dist/types/index.d.ts",
+	"files": [
+		"dist"
+	],
+	"scripts": {
+		"build": "webpack --mode production"
+	},
+	"keywords": [
+		"flatten",
+		"flat",
+		"typescript"
+	],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"babel-loader": "^9.1.2",
+		"ts-loader": "^9.4.4",
+		"typescript": "^5.1.6",
+		"webpack": "^5.88.1",
+		"webpack-cli": "^5.1.4"
+	},
+	"dependencies": {
+		"flat": "^6.0.1"
+	}
+}
