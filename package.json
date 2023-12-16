@@ -1,6 +1,6 @@
 {
-	"name": "flat-ts",
-	"version": "0.0.1",
+	"name": "flatten-type",
+	"version": "0.0.2",
 	"description": "flatten a nested object with type hint",
 	"main": "dist/index.js",
 	"types": "dist/types/index.d.ts",
@@ -16,7 +16,7 @@
 		"typescript"
 	],
 	"author": "",
-	"license": "ISC",
+	"license": "BSD-3-Clause",
 	"devDependencies": {
 		"babel-loader": "^9.1.2",
 		"ts-loader": "^9.4.4",
