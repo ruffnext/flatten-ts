@@ -13,6 +13,8 @@ Flatten nested data while preserving types.
 ```
 import * as flat from "flatten-type"
 
-const flatten = flat.flatten(data)
-const unflatten : TypeHint = flat.unflatten(data)
+const nested = // define your nested data
+
+const flatten = flat.flatten(nested)
+const reconstructed : TypeHint = flat.unflatten(flatten)
 ```
